@@ -1,0 +1,21 @@
+[req]
+prompt             = no
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_ca
+
+[ req_distinguished_name ]
+countryName                     = IN
+stateOrProvinceName             = Telengana
+localityName                    = Kandi
+organizationName              = IIT-HYD
+organizationalUnitName          = CSE
+CN								= iTS Root R1
+emailAddress					= cs23mtech11015@iith.ac.in
+
+
+[ v3_ca ]
+
+basicConstraints = critical, CA:true
+keyUsage = critical, cRLSign, keyCertSign
+
+
